@@ -1,0 +1,42 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#05010a;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#fff;
+}
+#game{
+  display:block;
+  border-radius:8px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.7)
+}
+#ui{
+  position:fixed;
+  top:12px; left:12px; right:12px;
+  display:flex;
+  justify-content:space-between;
+  pointer-events:none;
+}
+#ui > div{
+  background:rgba(255,255,255,0.04);
+  padding:8px 12px;
+  border-radius:6px;
+  font-weight:600;
+}
+#message{
+  position:fixed;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.5);
+  padding:14px 18px;
+  border-radius:8px;
+  font-size:18px;
+  pointer-events:auto;
+}
+
+@media (max-width:900px){
+  canvas{width:100%;height:auto}
+}
